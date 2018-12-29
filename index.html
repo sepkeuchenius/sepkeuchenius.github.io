@@ -1,7 +1,150 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <base target="_top">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-amber.min.css" />
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <h1>
-Test
-</h1>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <header class="mdl-layout__header">
+              <div class="mdl-layout__header-row">
+                  <!-- Title -->
+                  <span class="mdl-layout-title" id="page_title"><span id="title_link" style=" cursor:pointer;"><i class='material-icons' style='vertical-align:text-bottom; color:white;' >home</i> Lulilalila</span></span>
+                  <!-- Add spacer, to align navigation to the right -->
+                  <div class="mdl-layout-spacer"></div>
+                  <div class="mdl-spinner mdl-js-spinner is-active" style='display: none;' id="spinner"></div>
+
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                    mdl-textfield--floating-label mdl-textfield--align-right">
+                      <label class="mdl-button mdl-js-button mdl-button--icon"
+                             for="fixed-header-drawer-exp">
+                          <i class="material-icons" id="search_icon">search</i>
+                      </label>
+                      <div class="mdl-textfield__expandable-holder">
+                          <input class="mdl-textfield__input" type="text" name="sample"
+                                 id="fixed-header-drawer-exp">
+                      </div>
+                  </div>
+                  </div>
+          </header>
+
+          <div class="mdl-layout__drawer">
+              <span class="mdl-layout-title"  >Menu</span>
+              <nav class='mdl-navigation' id='loginMenu'>
+              <a class="mdl-navigation__link" id="ahome" onclick='displayPage("newHouse")'><i class='material-icons' style='vertical-align:top;' >add</i> Create House</a>
+              <a class="mdl-navigation__link" id="ahome" onclick='displayPage("newHouse")'><i class='material-icons' style='vertical-align:top;' >open_in_browser</i> Join House</a>
+              <a class="mdl-navigation__link" id="afeedback"><i class='material-icons' style='vertical-align:top;' >feedback</i> Feedback</a>
+              <a class="mdl-navigation__link" id="name" style="
+      position:  absolute;
+      bottom:  0;
+  "></a>
+             </nav>
+              <nav class="mdl-navigation" id='houseMenu' style='display: none';>
+                  <a class="mdl-navigation__link" id="ahouse" onclick='displayPage("houseHome")'><i class='material-icons' style='vertical-align:top;' >home</i></a>
+                  <a class="mdl-navigation__link" id="acalendar" onclick='displayPage("calendar")'><i class='material-icons' style='vertical-align:top;' >date_range</i> Calendar</a>
+                  <a class="mdl-navigation__link" id="agroceries" onclick='displayPage("groceries")'><i class='material-icons' style='vertical-align:top;' >shopping_basket</i> Groceries</a>
+                  <a class="mdl-navigation__link" id="acook" onclick='displayPage("dinner")'><i class='material-icons' style='vertical-align:top;' >group_work</i> Dinner</a>
+                  <a class="mdl-navigation__link" id="ajobs" onclick='displayPage("jobs")'><i class='material-icons' style='vertical-align:top;' >how_to_reg</i> House jobs</a>
+                   <a class="mdl-navigation__link" id="aprofile" onclick='displayPage("profile")'><i class='material-icons' style='vertical-align:top;' >account_circle</i> Profile</a>
+                  <a class="mdl-navigation__link" id="afeedback"><i class='material-icons' style='vertical-align:top;' >feedback</i> Feedback</a>
+
+                   <a class="mdl-navigation__link" id="name2" style="
+      position:  absolute;
+      bottom:  0;
+  "></a>
+
+              </nav>
+          </div>
+          <main class="mdl-layout__content">
+              <div class="page-content" style='margin: 0 auto;'>
+              <center>
+              <h5>Upcoming</h5>
+              </center>
+              <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--4-col">
+    <h5>Friday</h5>
+    <i class='material-icons' style='vertical-align:middle;' >face</i> Anthon <br><br>
+    <i class='material-icons' style='vertical-align:middle;' >home</i> Thijs, Sandra, Sep, Anthon <br><br>
+    <i class='material-icons' style='vertical-align:middle;' >local_grocery_store</i> Anthon <br><br>
+   </div>
+    <div class="mdl-cell mdl-cell--4-col"><h5>Saturday</h5>
+    <i class='material-icons' style='vertical-align:middle;' >face</i> Anthon <br><br>
+    <i class='material-icons' style='vertical-align:middle;' >home</i> Thijs, Sandra, Sep, Anthon <br><br>
+    <i class='material-icons' style='vertical-align:middle;' >local_grocery_store</i> Anthon <br><br>
+   </div>
+    <div class="mdl-cell mdl-cell--4-col"><h5>Sunday</h5>
+    <i class='material-icons' style='vertical-align:middle;' >face</i> Anthon <br><br>
+    <i class='material-icons' style='vertical-align:middle;' >home</i> Thijs, Sandra, Sep, Anthon <br><br>
+    <i class='material-icons' style='vertical-align:middle;' >local_grocery_store</i> Anthon <br><br>
+   </div>
+  </div>
+
+    <center><h5>Groceries</h5></center>
+    <div class="mdl-grid" >
+    <div class="mdl-cell mdl-cell--5-col" style='margin: 0 auto;'>
+  <ul class="demo-list-icon mdl-list">
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-icon">local_grocery_store</i>
+      Bryan Cranston
+  </span>
+    </li>
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-icon">local_grocery_store</i>
+      Aaron Paul
+    </span>
+    </li>
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-icon">local_grocery_store</i>
+      Bob Odenkirk
+    </span>
+    </li>
+  </ul>
+  </div>
+  </div>
+              <div id='housePage'>
+             <div id='home' class='house'><h1>Home</h1></div>
+             <div id='calendar' class='house'>
+             <h1>Calendar</h1>
+
+             </div>
+             <div id='groceries' class='house'>
+             <h1>Groceries</h1>
+             </div>
+             <div id='dinner' class='house'>
+             <h1>Dinner</h1>
+             </div>
+             <div id='jobs' class='house'>
+
+             </div>
+             <div id='money' class='house'>
+
+             </div>
+             <div id='manage' class='house'>
+
+             </div>
+             <div id='profile' class='house'>
+
+             </div>
+
+             </div>
+
+              <br>
+  <!-- center> <img src='https://i.pinimg.com/originals/81/4b/c5/814bc5ce38a3880d7a9ec189b064cea6.png' id='logoBig' >
+  <img src='https://i.pinimg.com/originals/27/e8/76/27e876056b033bd9762b4f683dd1922e.png' id='logoMiddle' ></center -->
+
+              </div>
+              </main>
+                </div>
+
+
+
+
+  <script src='script.js'></script>
 </body>
-</html>
