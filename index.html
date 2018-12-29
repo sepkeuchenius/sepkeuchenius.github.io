@@ -14,7 +14,7 @@
           <header class="mdl-layout__header">
               <div class="mdl-layout__header-row">
                   <!-- Title -->
-                  <span class="mdl-layout-title" id="page_title"><span id="title_link" style=" cursor:pointer;"><i class='material-icons' style='vertical-align:text-bottom; color:white;' >home</i> Lulilalila</span></span>
+                  <span class="mdl-layout-title" id="page_title"><span id="title_link" style=" cursor:pointer;"><i class='material-icons' style='vertical-align:text-bottom; color:#30576a;' >nature</i>&nbsp Plantenactie</span></span>
                   <!-- Add spacer, to align navigation to the right -->
                   <div class="mdl-layout-spacer"></div>
                   <div class="mdl-spinner mdl-js-spinner is-active" style='display: none;' id="spinner"></div>
@@ -34,29 +34,24 @@
           </header>
 
           <div class="mdl-layout__drawer">
-              <span class="mdl-layout-title"  >Menu</span>
-              <nav class='mdl-navigation' id='loginMenu'>
-              <a class="mdl-navigation__link" id="ahome" onclick='displayPage("newHouse")'><i class='material-icons' style='vertical-align:top;' >add</i> Create House</a>
-              <a class="mdl-navigation__link" id="ahome" onclick='displayPage("newHouse")'><i class='material-icons' style='vertical-align:top;' >open_in_browser</i> Join House</a>
-              <a class="mdl-navigation__link" id="afeedback"><i class='material-icons' style='vertical-align:top;' >feedback</i> Feedback</a>
-              <a class="mdl-navigation__link" id="name" style="
-      position:  absolute;
-      bottom:  0;
-  "></a>
-             </nav>
-              <nav class="mdl-navigation" id='houseMenu' style='display: none';>
-                  <a class="mdl-navigation__link" id="ahouse" onclick='displayPage("houseHome")'><i class='material-icons' style='vertical-align:top;' >home</i></a>
-                  <a class="mdl-navigation__link" id="acalendar" onclick='displayPage("calendar")'><i class='material-icons' style='vertical-align:top;' >date_range</i> Calendar</a>
-                  <a class="mdl-navigation__link" id="agroceries" onclick='displayPage("groceries")'><i class='material-icons' style='vertical-align:top;' >shopping_basket</i> Groceries</a>
-                  <a class="mdl-navigation__link" id="acook" onclick='displayPage("dinner")'><i class='material-icons' style='vertical-align:top;' >group_work</i> Dinner</a>
-                  <a class="mdl-navigation__link" id="ajobs" onclick='displayPage("jobs")'><i class='material-icons' style='vertical-align:top;' >how_to_reg</i> House jobs</a>
-                   <a class="mdl-navigation__link" id="aprofile" onclick='displayPage("profile")'><i class='material-icons' style='vertical-align:top;' >account_circle</i> Profile</a>
-                  <a class="mdl-navigation__link" id="afeedback"><i class='material-icons' style='vertical-align:top;' >feedback</i> Feedback</a>
+            <span class="mdl-layout-title">Menu</span>
+            <nav class="mdl-navigation">
+          <div id="login_nav">
 
-                   <a class="mdl-navigation__link" id="name2" style="
-      position:  absolute;
-      bottom:  0;
-  "></a>
+              <a class="mdl-navigation__link" id="ahtml" onclick="displayPage(&quot;login&quot;)"><i class="material-icons" style="vertical-align:top;">account_circle</i> &nbsp;  Log in</a>
+              <a class="mdl-navigation__link" id="ahtml" onclick="displayPage(&quot;help&quot;)"><i class="material-icons" style="vertical-align:top;">help</i> &nbsp; Help</a>
+             </div>
+             <div id="user_nav" style="display:none;">
+             <a class="mdl-navigation__link" id="ahtml" onclick="displayPage(&quot;add&quot;)"><i class="material-icons" style="vertical-align:top;">add</i> &nbsp;   Nieuwe bestelling</a>
+              <a class="mdl-navigation__link" id="ahtml" onclick="displayPage(&quot;wijzigen&quot;)"><i class="material-icons" style="vertical-align:top;">edit</i> &nbsp; Wijzig bestelling</a>
+             </div>
+
+              <img src="https://www.scouting.nl/downloads/ondersteuning/communicatie/huisstijl/huisstijl-logos-logoformats-en-achtergronden/851-scouting-nederland-logo-rgb-png-bestand-transparante-achtergrond/file" style="width: 50%;" id="name">
+
+
+          </nav>
+              <nav class="mdl-navigation" id='houseMenu' style='display: none';>
+
 
               </nav>
           </div>
