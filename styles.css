@@ -144,6 +144,6 @@ background: white;
     bottom: 0;
     left: 20%;
 }
-input{
+input, label{
   font-size: 2em !important;
 }
