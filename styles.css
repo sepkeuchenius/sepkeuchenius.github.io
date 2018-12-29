@@ -144,3 +144,6 @@ background: white;
     bottom: 0;
     left: 20%;
 }
+input{
+  font-size: 2em !important;
+}
