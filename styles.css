@@ -7,11 +7,11 @@
   }
 }
 .mdl-layout__header {
-    color: white;
-    background: #f7ad00;
+    color: #30576a;
+    background: white;
 }
     .mdl-layout__header .mdl-layout__drawer-button {
-        color: white;
+        color: #30576a;
     }
 
 main {
@@ -138,6 +138,9 @@ background: white;
 .demo-list-radio {
   display: inline;
 }
-
-
- 
+#name{
+  position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    left: 20%;
+}
