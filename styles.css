@@ -1,0 +1,143 @@
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.mdl-layout__header {
+    color: white;
+    background: #f7ad00;
+}
+    .mdl-layout__header .mdl-layout__drawer-button {
+        color: white;
+    }
+
+main {
+background: #ebebeb;
+
+}
+.page-content{
+max-width: 1080px;
+}
+ .mdl-layout__header-row .mdl-navigation__link{
+     color: black;
+ }
+
+ .center{
+ text-align: center;}
+ #name:hover{
+ background: rgb(250, 250, 250) !important;}
+ h1,h2,h3{
+ color:#f7ad00}
+ .page{
+ display: none;
+ }
+
+ #step_two{
+ display: none;}
+ .person{
+ display: block;}
+ .person{
+ display: block;
+ }
+ @media screen and (min-width: 1000px) {
+ #logoMiddle{
+ position: absolute;
+ bottom: 50px;
+ right: 50px;
+ animation: createBox 1s;
+ }
+
+ #logoBig{
+ display:none;}
+ }
+  @media screen and (min-width: 1800px) {
+ #logoBig{
+ display: inline;
+ position: absolute;
+ bottom: 50px;
+ right: 50px;
+  animation: createBox 1s;
+ }
+
+ #logoMiddle{
+ display:none;}
+ }
+ @media screen and (max-width: 1000px) {
+ #logoBig{
+ width: 300px;
+ height: auto;
+ margin: 100px 0 auto;
+  animation: createBox 1s;
+ }
+ #logoMiddle{
+ display: none;}
+ }
+
+
+
+
+  #logoSmall{
+ width: 20px;
+ height: 20px;
+  animation: createBox 1s;
+ }
+
+
+
+
+#joinCard > .mdl-card__title {
+  color: rgba(0,0,0,.70);
+  background:
+    url('https://i0.wp.com/lh3.googleusercontent.com/EIX5pscg5l1Quvsz17LKk6W5oCSIxOfukBAUmbGR4Uvs1uKDYvbNr0XYE7hqpI3KHQ=w185') bottom right 15% no-repeat #fff;
+}
+
+#newCard > .mdl-card__title {
+  color: #fff;
+  background : #f7ad00;
+}
+
+ .demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+  margin: 10px;
+
+}
+
+.house{
+display: none;}
+
+ .mdl-cell {
+background: white;
+ padding: 10px;
+ padding-left: 30px;
+ border-radius:5px;
+ }
+ .mdl-cell h3{
+ padding: 0;
+ margin: 20px;
+ margin-left: 0;
+ }
+ .mdl-cell i{
+ vertical-align: middle;}
+ p{
+ font-size: 1.5em;
+ margin-top: 10px;
+ }
+ .mdl-cell h5{
+ font-family: "Roboto","Helvetica","Arial",sans-serif;
+    margin: 24px 0 24px;
+    color: rgb(255, 87, 34);}
+
+ .demo-list-control {
+  width: 300px;
+}
+
+.demo-list-radio {
+  display: inline;
+}
+
+
+ 
