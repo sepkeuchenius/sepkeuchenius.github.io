@@ -155,4 +155,8 @@ border-radius: 10px;
 max-width: 300px;
 margin: 0 auto;
 margin-top: 50px;
+display: none;
+}
+.mdl-layout__header{
+  display: none;
 }
