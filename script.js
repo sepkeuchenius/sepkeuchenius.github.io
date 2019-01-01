@@ -40,8 +40,8 @@ function user_login(){
 function login_page(data){
   console.log(data);
   $('#loginDiv').hide();
-  $('#nameTitle').text('Welkom, ' + data.fullname);
-  $('#wijkTitle').text('Wijk: ' + data.wijk);
+  $('#userHead').html("<i class='material-icons' style='vertical-align:middle;'>account_circle</i>  " + data.fullname + ', ' + data.speltak);
+
   $('#userpage').fadeIn('1000');
 
 }

@@ -16,10 +16,11 @@
           <header class="mdl-layout__header" style='display:none;' >
               <div class="mdl-layout__header-row">
                   <!-- Title -->
-                  <span class="mdl-layout-title" id="page_title"><span id="title_link" style=" cursor:pointer;">
+                  <span class="mdl-layout-title" id="page_title" style='width: 100%'>
+                    <span id="title_link" style=" cursor:pointer;">
                     <!--i class='material-icons' style='vertical-align:text-bottom; color:#008000;' >nature</i -->
                     <img src="assets/plantenactie groen.png"  style="width:30px; height:auto;">
-                    &nbsp Plantenactie </span></span>
+                    &nbsp Plantenactie </span> <span id='userHead' style="float: right;  color: #757575; font-size: 0.84em;"></span></span>
                   <!-- Add spacer, to align navigation to the right -->
                   <div class="mdl-layout-spacer"></div>
                   <div class="mdl-spinner mdl-js-spinner is-active" style='display: none;' id="spinner"></div>
@@ -82,12 +83,10 @@
 </div>
 <div id='userpage' style='display: none;'>
   <center>
-<h5 id='nameTitle'></h5>
-<h6 id='wijkTitle'></h6>
 </center>
 <div class="mdl-grid" id='actions'>
   <div class="mdl-cell mdl-cell--6-col wijkcard" id='newHouseCard'>
-<h5><i class='material-icons'>playlist_add</i> Nieuw huis</h5>
+<h5 style='margin-bottom: 0;'><i class='material-icons'>playlist_add</i> Nieuw huis</h5>
 <div id='streetInput'>
 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id='straatInput'>
     <input class="mdl-textfield__input" type="text" id="straat">
@@ -170,7 +169,7 @@
   <div class="mdl-snackbar__text"></div>
   <button class="mdl-snackbar__action" type="button"></button>
 </div>
-<img src="assets/plantenactie groen.png" style='width: 100px; height: auto; bottom: 20px; right:20px; position: absolute; '>
+<img src="assets/plantenactie groen.png" id='plantenLogo'  style='width: 100px; height: auto; bottom: 20px; right:20px; position: fixed; '>
 
               <br>
   <!-- center> <img src='https://i.pinimg.com/originals/81/4b/c5/814bc5ce38a3880d7a9ec189b064cea6.png' id='logoBig' >

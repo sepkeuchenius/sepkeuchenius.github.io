@@ -53,10 +53,11 @@ max-width: 1080px;
  #logoBig{
  display:none;}
  }
+
   @media screen and (min-width: 1800px) {
  #logoBig{
  display: inline;
- position: absolute;
+ position: fixed;
  bottom: 50px;
  right: 50px;
   animation: createBox 1s;
@@ -74,6 +75,15 @@ max-width: 1080px;
  }
  #logoMiddle{
  display: none;}
+ #userHead{
+   display: none;
+ }
+#plantenLogo{
+display: none;
+
+}
+
+
  }
 
 
@@ -183,7 +193,7 @@ display: none;
   width: 97%;
 }
 #nummerInput{
-  width: 29%;
+  width: 28%;
   text-align: center;
 }
 #straatInput{
@@ -201,10 +211,17 @@ display: none;
 }
 #footer{
   float: right;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-right: 10px;
+  margin-top: 0;;
 }
 #kosten{
   margin-right: 10px;
   font-size: 1.5em;
+}
+#userHead{
+  margin-top: 1px;
+}
+.mdl-textfield{
+  padding-bottom: 20px;
 }
