@@ -8,7 +8,12 @@ var database = firebase.database()
 
 $('#loginDiv').fadeIn(1200);
 $('.mdl-layout__header').slideDown(1200)
-
+$('#code, #username').keypress(function(e){
+  if (e.keyCode == 13){
+    user_login();
+  }
+});
+$('#username').focus()
 
 $("#loginButton").click(user_login);
 
@@ -17,7 +22,8 @@ function user_login(){
   var pwd = $('#code').val();
   database.ref('users/' + username).once('value').then(function(snapshot){
     if(snapshot.val().password == pwd){
-      alert('succesful login')
+      console.log('succesful login')
+      login_page(snapshot.val());
     }
     else if(snapshot.val().password){
       alert('wrong pass')
@@ -26,4 +32,12 @@ function user_login(){
       alert('wrong user')
     }
   });
+}
+function login_page(data){
+  console.log(data);
+  $('#loginDiv').hide();
+  $('#nameTitle').text('Welkom, ' + data.fullname);
+  $('#wijkTitle').text('Wijk: ' + data.wijk);
+  $('#userpage').fadeIn('1000');
+
 }

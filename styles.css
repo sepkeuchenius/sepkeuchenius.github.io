@@ -160,3 +160,8 @@ display: none;
 .mdl-layout__header{
   display: none;
 }
+.wijkcard{
+  background-color: white;
+  border-radius: 5px;
+  height: 200px;
+}
