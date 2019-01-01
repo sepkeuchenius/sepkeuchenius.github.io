@@ -183,10 +183,11 @@ display: none;
 #actions{
   margin: 0 auto;
 }
-#newHouseCard{
+.cards{
   margin:0 auto;
   padding-left: 35px;
   padding-right: 30px;
+  margin-bottom: 30px;
 }
 #streetInput{
   display: inline-block;
