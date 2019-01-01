@@ -111,9 +111,8 @@ display: none;}
 
  .mdl-cell {
 background: white;
- padding: 10px;
- padding-left: 30px;
- border-radius:5px;
+
+ border-radius:50%;
  }
  .mdl-cell h3{
  padding: 0;
@@ -121,15 +120,15 @@ background: white;
  margin-left: 0;
  }
  .mdl-cell i{
- vertical-align: middle;}
+ vertical-align: text-top;}
  p{
  font-size: 1.5em;
  margin-top: 10px;
  }
  .mdl-cell h5{
  font-family: "Roboto","Helvetica","Arial",sans-serif;
-    margin: 24px 0 24px;
-    color: rgb(255, 87, 34);}
+color: #008000;
+  }
 
  .demo-list-control {
   width: 300px;
@@ -163,5 +162,36 @@ display: none;
 .wijkcard{
   background-color: white;
   border-radius: 5px;
-  height: 200px;
+
+}
+.mdl-snackbar__text{
+  text-align: center !important;
+}
+#newHouseCard input, label{
+  font-size: 1em !important;
+}
+#actions{
+  margin: 0 auto;
+}
+#newHouseCard{
+  margin:0 auto;
+  padding-left: 50px;
+}
+#streetInput{
+  display: inline-block;
+  width: 100%;
+}
+#nummerInput{
+  width: 20%;
+  text-align: center;
+}
+#straatInput{
+  width: 70%;
+
+}
+.count{
+  width: 45%;
+}
+#naamInput{
+  width: 90%;
 }

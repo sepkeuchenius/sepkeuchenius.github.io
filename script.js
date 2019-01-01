@@ -18,19 +18,23 @@ $('#username').focus()
 $("#loginButton").click(user_login);
 
 function user_login(){
-  var username = $('#username').val();
-  var pwd = $('#code').val();
+  var username = $('#username').val().toLowerCase();
+  var pwd = $('#code').val().toLowerCase();
   database.ref('users/' + username).once('value').then(function(snapshot){
-    if(snapshot.val().password == pwd){
-      console.log('succesful login')
+    if(!snapshot.val()){
+      showSnack('Naam is niet herkend');
+      $('#loginDiv').effect( "shake" , 400);
+
+    }
+    else if(snapshot.val().password == pwd){
+      showSnack('Welkom, ' + snapshot.val().fullname)
       login_page(snapshot.val());
     }
     else if(snapshot.val().password){
-      alert('wrong pass')
+      showSnack('Verkeerd wachtwoord')
+      $('#loginDiv').effect( "shake" );
     }
-    else{
-      alert('wrong user')
-    }
+
   });
 }
 function login_page(data){
@@ -41,3 +45,14 @@ function login_page(data){
   $('#userpage').fadeIn('1000');
 
 }
+function showSnack(msg){
+  'use strict';
+  var snackbarContainer = document.querySelector('#demo-snackbar-example');
+
+    var data = {
+      message: msg,
+      timeout: 2000,
+      actionText: 'Undo'
+    };
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+};
