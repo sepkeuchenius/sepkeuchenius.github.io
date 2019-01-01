@@ -82,7 +82,9 @@ max-width: 1080px;
 display: none;
 
 }
-
+.wijkcard{
+  background: #ebebeb !important;
+}
 
  }
 
