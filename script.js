@@ -5,7 +5,7 @@ document.querySelector('.mdl-layout__drawer').addEventListener('click', function
 var drawer = document.getElementsByClassName('mdl-layout__drawer')[0];
 var housesGlobal = []
 var database = firebase.database()
-
+document.onload = $('#loader').hide()
 $('#loginDiv').fadeIn(1200);
 $('.mdl-layout__header').slideDown(1200)
 $('#code, #username').keypress(function(e){
@@ -18,9 +18,11 @@ $('#username').focus()
 $("#loginButton").click(user_login);
 
 function user_login(){
+  load()
   var username = $('#username').val().toLowerCase();
   var pwd = $('#code').val().toLowerCase();
   database.ref('users/' + username).once('value').then(function(snapshot){
+    load()
     if(!snapshot.val()){
       showSnack('Naam is niet herkend');
       $('#loginDiv').effect( "shake" , 400);
@@ -41,8 +43,10 @@ function login_page(data){
   console.log(data);
   $('#loginDiv').hide();
   $('#userHead').html("<i class='material-icons' style='vertical-align:middle;'>account_circle</i>  " + data.fullname + ', ' + data.speltak);
-
+  $('#menuTitle').text(data.fullname);
   $('#userpage').fadeIn('1000');
+  $("#login_nav").hide();
+  $('#user_nav').show();
 
 }
 function showSnack(msg){
@@ -56,3 +60,15 @@ function showSnack(msg){
     };
     snackbarContainer.MaterialSnackbar.showSnackbar(data);
 };
+var loader = false;
+
+function load(){
+  if(loader){
+    $('#loader').hide();
+    loader = false;
+  }
+  else {
+    $('#loader').show();
+    loader = true;
+  }
+}

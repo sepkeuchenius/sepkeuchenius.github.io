@@ -37,7 +37,7 @@
           </header>
 
           <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Menu</span>
+            <span class="mdl-layout-title" id='menuTitle'>Menu</span>
             <nav class="mdl-navigation">
           <div id="login_nav">
 
@@ -45,8 +45,9 @@
               <a class="mdl-navigation__link" id="ahtml" onclick="displayPage(&quot;help&quot;)"><i class="material-icons" style="vertical-align:top;">help</i> &nbsp; Help</a>
              </div>
              <div id="user_nav" style="display:none;">
-             <a class="mdl-navigation__link" id="ahtml" onclick="displayPage(&quot;add&quot;)"><i class="material-icons" style="vertical-align:top;">add</i> &nbsp;   Nieuwe bestelling</a>
-              <a class="mdl-navigation__link" id="ahtml" onclick="displayPage(&quot;wijzigen&quot;)"><i class="material-icons" style="vertical-align:top;">edit</i> &nbsp; Wijzig bestelling</a>
+             <a class="mdl-navigation__link" id="ahtml" onclick="displayPage(&quot;add&quot;)"><i class="material-icons" style="vertical-align:top;">playlist_add</i> &nbsp;   Nieuwe bestelling</a>
+             <a class="mdl-navigation__link" id="ahtml" onclick="displayPage(&quot;wijzigen&quot;)"><i class="material-icons" style="vertical-align:top;">edit</i> &nbsp; Wijzig bestelling</a>
+              <a class="mdl-navigation__link" id="ahtml" onclick="displayPage(&quot;wijzigen&quot;)"><i class="material-icons" style="vertical-align:top;">bar_chart</i> &nbsp; Records</a>
              </div>
 
               <img src="https://www.scouting.nl/downloads/ondersteuning/communicatie/huisstijl/huisstijl-logos-logoformats-en-achtergronden/851-scouting-nederland-logo-rgb-png-bestand-transparante-achtergrond/file" style="width: 50%;" id="name">
@@ -58,6 +59,7 @@
 
               </nav>
           </div>
+          <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate" style='width: 100%;' id='loader'></div>
           <main class="mdl-layout__content">
               <div class="page-content" style='margin: 0 auto;'>
 <div id='loginDiv'>
@@ -86,7 +88,7 @@
 </center>
 <div class="mdl-grid" id='actions'>
   <div class="mdl-cell mdl-cell--6-col wijkcard" id='newHouseCard'>
-<h5 style='margin-bottom: 0;'><i class='material-icons'>playlist_add</i> Nieuw huis</h5>
+<h5 style='margin-bottom: 0;'><i class='material-icons'>playlist_add</i> Nieuwe bestelling</h5>
 <div id='streetInput'>
 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id='straatInput'>
     <input class="mdl-textfield__input" type="text" id="straat">
@@ -154,6 +156,10 @@
 </div>
 
   </div>
+
+  <div class="mdl-cell mdl-cell--6-col wijkcard" id='newHouseCard'>
+<h5 style='margin-bottom: 0;'><i class='material-icons'>edit</i> Weizig bestelling</h5>
+</div>
 
 
 </div>
