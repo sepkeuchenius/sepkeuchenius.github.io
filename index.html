@@ -37,7 +37,7 @@
                   <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate" style='width: 100%;' id='loader'></div>
 
                   <div class="mdl-layout__tab-bar mdl-js-ripple-effect" id='userBar' style='display:none;'>
-    <a href="#newHouseCard" class="mdl-layout__tab is-active">Bestelling</a>
+    <a id='tab1' href="#newHouseCard" class="mdl-layout__tab is-active">Bestelling</a>
     <a href="#editHouseCard" class="mdl-layout__tab">Weizig</a>
     <a href="#scroll-tab-3" class="mdl-layout__tab">Lijst</a>
     <a href="#scroll-tab-4" class="mdl-layout__tab">Records</a>
@@ -54,7 +54,7 @@
               <a class="mdl-navigation__link" id="ahtml" ><i class="material-icons" style="vertical-align:top;">help</i> &nbsp; Help</a>
              </div>
              <div id="user_nav" style="display:none;">
-             <a class="mdl-navigation__link" id="ahtml"  href='#newHouseCard'><i class="material-icons" style="vertical-align:top;">add</i> &nbsp;   Nieuwe bestelling</a>
+             <a class="mdl-navigation__link" id="ahtml"  href='#newHouseCard' onlclick="$('#tab1').click()"><i class="material-icons" style="vertical-align:top;">add</i> &nbsp;   Nieuwe bestelling</a>
              <a class="mdl-navigation__link" id="ahtml" href='#editHouseCard'><i class="material-icons" style="vertical-align:top;">edit</i> &nbsp; Wijzig bestelling</a>
              <a class="mdl-navigation__link" id="ahtml" onclick="displayPage(&quot;add&quot;)"><i class="material-icons" style="vertical-align:top;">playlist_add</i> &nbsp; Lijst invoeren</a>
 
