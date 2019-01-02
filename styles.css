@@ -52,7 +52,10 @@ max-width: 1080px;
 
  #logoBig{
  display:none;}
- }
+
+ .cards{
+   background: white !important;
+ }}
 
   @media screen and (min-width: 1800px) {
  #logoBig{
@@ -82,12 +85,13 @@ max-width: 1080px;
 display: none;
 
 }
-.wijkcard{
+.cards{
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-  margin-top: 10px !important;
+  margin-top: 20px !important;
   margin-bottom: 0 !important;
+
 }
 .mdl-grid{
   padding : 0 !important;
