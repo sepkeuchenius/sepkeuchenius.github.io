@@ -1,0 +1,21 @@
+{
+  "short_name": "Plantenactie",
+  "name": "Plantenactie",
+  "icons": [
+    {
+      "src": "/assets/plantenactie groen.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/plantenactie groen.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#008000",
+  "display": "fullscreen",
+  "scope": "",
+  "theme_color": "#008000"
+}

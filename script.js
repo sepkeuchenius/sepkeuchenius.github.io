@@ -2,6 +2,14 @@ document.querySelector('.mdl-layout__drawer').addEventListener('click', function
     document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
     this.classList.remove('is-visible');
 }, false);
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+});
 var drawer = document.getElementsByClassName('mdl-layout__drawer')[0];
 var housesGlobal = []
 var database = firebase.database()
@@ -40,6 +48,17 @@ function user_login(){
   });
 }
 function login_page(data){
+  deferredPrompt.prompt();
+  // Wait for the user to respond to the prompt
+  deferredPrompt.userChoice
+    .then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the A2HS prompt');
+      } else {
+        console.log('User dismissed the A2HS prompt');
+      }
+      deferredPrompt = null;
+    });
   console.log(data);
   $('#loginDiv').hide();
   $('#userHead').html("<i class='material-icons' style='vertical-align:middle;'>account_circle</i>  " + data.fullname + ', ' + data.speltak);
