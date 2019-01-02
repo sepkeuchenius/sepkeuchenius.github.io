@@ -200,6 +200,7 @@ display: none;
 #streetInput{
   display: inline-block;
   width: 97%;
+  max-width: 825px;
 }
 #nummerInput{
   width: 28%;
@@ -211,9 +212,11 @@ display: none;
 }
 .count{
   width: 48%;
+  max-width: 200px;
 }
 #naamInput{
   width: 97%;
+  max-width: 811px;
 }
 #footer{
   display: flex;
@@ -222,7 +225,7 @@ display: none;
   float: right;
   margin-bottom: 20px;
   margin-right: 10px;
-  margin-top: 0;;
+  margin-top: 0;
 }
 #kosten{
   margin-right: 10px;
