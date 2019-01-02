@@ -49,6 +49,7 @@ function login_page(data){
   $('#user_nav').show();
   $('#userBar').show()
   $('.mdl-layout__tab-bar-container').show()
+  $('main').css('background', '#ebebeb')
 
 }
 function showSnack(msg){
