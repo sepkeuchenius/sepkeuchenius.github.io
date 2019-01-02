@@ -47,6 +47,8 @@ function login_page(data){
   $('#userpage').fadeIn('1000');
   $("#login_nav").hide();
   $('#user_nav').show();
+  $('#userBar').show()
+  $('.mdl-layout__tab-bar-container').show()
 
 }
 function showSnack(msg){
