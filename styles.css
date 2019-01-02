@@ -47,7 +47,9 @@ background: #ebebeb;
  right: 50px;
  animation: createBox 1s;
  }
-
+ main{
+   background: Url('assets/hero.jpg') center / cover;
+ }
  #logoBig{
  display:none;}
 
@@ -239,7 +241,4 @@ display: none;
 }
 .mdl-layout__tab-bar-container{
   display: none;
-}
-main{
-  background: Url('assets/hero.jpg') center / cover;
 }
