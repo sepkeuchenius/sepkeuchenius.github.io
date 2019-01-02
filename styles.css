@@ -177,11 +177,7 @@ display: none;
 .mdl-layout__header{
   display: none;
 }
-.wijkcard{
-  background-color: white;
-  border-radius: 5px;
 
-}
 .mdl-snackbar__text{
   text-align: center !important;
 }
@@ -192,10 +188,12 @@ display: none;
   margin: 0 auto;
 }
 .cards{
-  margin:0 auto;
+
   padding-left: 35px;
   padding-right: 30px;
   margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: #ebebeb;
 }
 #streetInput{
   display: inline-block;
