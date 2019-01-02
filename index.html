@@ -37,8 +37,8 @@
                   <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate" style='width: 100%;' id='loader'></div>
 
                   <div class="mdl-layout__tab-bar mdl-js-ripple-effect" id='userBar' style='display:none;'>
-    <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Bestelling</a>
-    <a href="#scroll-tab-2" class="mdl-layout__tab">Weizig</a>
+    <a href="#newHouseCard" class="mdl-layout__tab is-active">Bestelling</a>
+    <a href="#editHouseCard" class="mdl-layout__tab">Weizig</a>
     <a href="#scroll-tab-3" class="mdl-layout__tab">Lijst</a>
     <a href="#scroll-tab-4" class="mdl-layout__tab">Records</a>
 
@@ -99,7 +99,8 @@
   <center>
 </center>
 <div class="mdl-grid" id='actions'>
-  <div class="mdl-cell mdl-cell--6-col wijkcard cards" id='newHouseCard'>
+
+  <section class="mdl-cell mdl-cell--6-col wijkcard cards mdl-layout__tab-panel is-active" id='newHouseCard'>
 <h5 style='margin-bottom: 0;'><i class='material-icons'>add</i> Nieuwe bestelling</h5>
 <div id='streetInput'>
 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id='straatInput'>
@@ -167,13 +168,14 @@
 
 </div>
 
-  </div>
+</section>
 
-  <div class="mdl-cell mdl-cell--6-col wijkcard cards" id='editHouseCard'>
+
+  <section class="mdl-cell mdl-cell--6-col wijkcard cards mdl-layout__tab-panel" id='editHouseCard'>
 <h5 style='margin-bottom: 0;'><i class='material-icons'>edit</i> Weizig bestelling</h5>
 <br>
 Kies een bestelling om te wijzigen
-</div>
+</section>
 
 
 </div>
