@@ -85,6 +85,12 @@ background: #ebebeb;
 display: none;
 
 }
+#lijstCard{
+  padding: 10px;
+}
+#lijstCard .count{
+  width: 6% !important;
+}
 .cards{
   margin-left: 0;
   margin-right: 0;
@@ -188,6 +194,9 @@ display: none;
 #newHouseCard input, label{
   font-size: 1em !important;
 }
+#editHouseCard{
+  padding-bottom: 30px;
+}
 #actions{
   margin: 0 auto;
 }
@@ -249,7 +258,7 @@ display: none;
   display: none;
 }
 .bloemDiv{
-  width : 48%;
+
   display:inline-block;
   max-width: 411px;
 }
@@ -258,7 +267,20 @@ select{
   font-family: "Helvetica","Arial",sans-serif;
   background: #ebebeb;
   font-size: 1.3em;
+  margin-right: 30px;
+  height: 36px;
+  color: #4e4d4d;
 }
-option{
-box-shadow: 0 0 10px 100px #ebebeb inset;
+#lijstCard{
+  width: 100%;
+}
+#lijstCard .count{
+  width: 7%;
+}
+.lijst{
+  width:13%;
+}
+#lijstInputs{
+  width: 100%;
+  max-width: 100%;
 }

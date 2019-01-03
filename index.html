@@ -39,8 +39,8 @@
                   <div class="mdl-layout__tab-bar mdl-js-ripple-effect" id='userBar' style='display:none;'>
     <a id='tab1' href="#newHouseCard" class="mdl-layout__tab is-active">Bestelling</a>
     <a href="#editHouseCard" class="mdl-layout__tab">Weizig</a>
-    <a href="#scroll-tab-3" class="mdl-layout__tab">Lijst</a>
-    <a href="#scroll-tab-4" class="mdl-layout__tab">Records</a>
+    <a href="#lijstCard" class="mdl-layout__tab">Lijst</a>
+    <a href="#recordsCard" class="mdl-layout__tab">Records</a>
 
   </div>
           </header>
@@ -190,9 +190,86 @@
 <br>
 Kies een bestelling om te wijzigen<br><br>
 <select id='huizenSelect'></select>
+<button class="mdl-button mdl-js-button mdl-button--raised" id='addButton'>
+Weizig
+</button>
 </section>
 
+<section class="mdl-cell mdl-cell--8-col cards mdl-layout__tab-panel" id='lijstCard'>
+<h5 style='margin-bottom: 0;'><i class='material-icons'>playlist_add</i> Lijst Invoeren</h5>
 
+<i>Deze optie is vooral bedoeld voor grote schermen</i>
+<br><br>
+<div id='lijstInputs'>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label lijst" id='lijstStraatInput'>
+    <input class="mdl-textfield__input" type="text" id="lijstStraat">
+    <label class="mdl-textfield__label" for="lijstStraat">Straat</label>
+</div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label lijst" id='lijstNummerInput'>
+    <input class="mdl-textfield__input" type="text" id="lijstStraat">
+    <label class="mdl-textfield__label" for="lijstStraat">HuisNr</label>
+</div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label lijst" id='lijstNaamInput'>
+    <input class="mdl-textfield__input" type="text" id="lijstStraat">
+    <label class="mdl-textfield__label" for="lijstStraat">Naam</label>
+</div>
+<div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
+  <input class="mdl-textfield__input" type="text" id="ger">
+  <label class="mdl-textfield__label" for="ger">Geraniums</label>
+
+</div>
+<div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
+  <input class="mdl-textfield__input" type="text" id="gger">
+  <label class="mdl-textfield__label" for="gger">+ Gratis</label>
+
+</div>
+<div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="fuc">
+    <label class="mdl-textfield__label" for="fuc">Fuchia's</label>
+
+  </div>
+  <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
+    <input class="mdl-textfield__input" type="text" id="gfuc">
+    <label class="mdl-textfield__label" for="gfuc">+ Gratis</label>
+
+</div>
+  <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
+      <input class="mdl-textfield__input" type="text" id="sm">
+      <label class="mdl-textfield__label" for="sm">Spaanse Margrieten</label>
+
+    </div>
+    <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
+      <input class="mdl-textfield__input" type="text" id="gsm">
+      <label class="mdl-textfield__label" for="gsm">+ Gratis</label>
+
+    </div>
+
+    <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
+       <input class="mdl-textfield__input" type="text" id="bp">
+       <label class="mdl-textfield__label" for="bp">Bloempotten</label>
+
+     </div>
+     <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
+       <input class="mdl-textfield__input" type="text" id="gbp">
+       <label class="mdl-textfield__label" for="gbp">+ Gratis</label>
+
+     </div>
+</div>
+
+
+
+
+
+
+
+
+
+</section>
+<section class="mdl-cell mdl-cell--10-col cards mdl-layout__tab-panel" id='recordsCard'>
+<h5 style='margin-bottom: 0;'><i class='material-icons'>bar_chart</i> Jouw Records</h5>
+<br>
+
+</section>
 
 </div>
 
