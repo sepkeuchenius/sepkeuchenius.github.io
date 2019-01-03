@@ -107,7 +107,7 @@
     <input class="mdl-textfield__input" type="text" id="straat">
     <label class="mdl-textfield__label" for="straat">Straat</label>
   </div>
-  <div class="mdl-textfield mdl-js-textfield" id='nummerInput'>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id='nummerInput'>
     <input class="mdl-textfield__input" type="text" id="nummer">
     <label class="mdl-textfield__label" for="nummer">HuisNr</label>
 
@@ -124,49 +124,49 @@
     </div>
 </div>
   <div id='gerDiv' class='bloemDiv'>
-  <div class="mdl-textfield mdl-js-textfield count" >
+  <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
     <input class="mdl-textfield__input" type="text" id="ger">
     <label class="mdl-textfield__label" for="ger">Geraniums</label>
 
   </div>
-  <div class="mdl-textfield mdl-js-textfield count" >
+  <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
     <input class="mdl-textfield__input" type="text" id="gger">
     <label class="mdl-textfield__label" for="gger">+ Gratis</label>
 
   </div>
 </div>
 <div id='fucDiv' class='bloemDiv'>
-  <div class="mdl-textfield mdl-js-textfield count">
+  <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label">
       <input class="mdl-textfield__input" type="text" id="fuc">
       <label class="mdl-textfield__label" for="fuc">Fuchia's</label>
 
     </div>
-    <div class="mdl-textfield mdl-js-textfield count" >
+    <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
       <input class="mdl-textfield__input" type="text" id="gfuc">
       <label class="mdl-textfield__label" for="gfuc">+ Gratis</label>
 
     </div>
   </div>
   <div id='smDiv' class='bloemDiv'>
-    <div class="mdl-textfield mdl-js-textfield count" >
+    <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
         <input class="mdl-textfield__input" type="text" id="sm">
         <label class="mdl-textfield__label" for="sm">Spaanse Margrieten</label>
 
       </div>
-      <div class="mdl-textfield mdl-js-textfield count" >
-        <input class="mdl-textfield__input" type="text" id="sgm">
+      <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
+        <input class="mdl-textfield__input" type="text" id="gsm">
         <label class="mdl-textfield__label" for="gsm">+ Gratis</label>
 
       </div>
     </div>
     <div id='bpDiv' class='bloemDiv'>
 
-      <div class="mdl-textfield mdl-js-textfield count" >
+      <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
          <input class="mdl-textfield__input" type="text" id="bp">
          <label class="mdl-textfield__label" for="bp">Bloempotten</label>
 
        </div>
-       <div class="mdl-textfield mdl-js-textfield count" >
+       <div class="mdl-textfield mdl-js-textfield count mdl-textfield--floating-label" >
          <input class="mdl-textfield__input" type="text" id="gbp">
          <label class="mdl-textfield__label" for="gbp">+ Gratis</label>
 
@@ -174,9 +174,9 @@
      </div>
 <div id='footer'>
        <button class="mdl-button mdl-js-button" id='kosten'>
-         €30
+         €0
        </button>
-       <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id='addButton'>
+       <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id='addButton' onclick = 'saveHouse()'>
        Opslaan!
      </button>
 
@@ -188,8 +188,10 @@
   <section class="mdl-cell mdl-cell--8-col cards mdl-layout__tab-panel" id='editHouseCard'>
 <h5 style='margin-bottom: 0;'><i class='material-icons'>edit</i> Weizig bestelling</h5>
 <br>
-Kies een bestelling om te wijzigen
+Kies een bestelling om te wijzigen<br><br>
+<select id='huizenSelect'></select>
 </section>
+
 
 
 </div>

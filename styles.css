@@ -253,3 +253,12 @@ display: none;
   display:inline-block;
   max-width: 411px;
 }
+select{
+  border: none;
+  font-family: "Helvetica","Arial",sans-serif;
+  background: #ebebeb;
+  font-size: 1.3em;
+}
+option{
+box-shadow: 0 0 10px 100px #ebebeb inset;
+}
