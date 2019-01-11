@@ -100,6 +100,8 @@ display: none;
 }
 #houseInput{
   padding-left: 10px;
+  background: #c6ebd7;
+  margin: 10px 0 10px 0;
 }
 .cardTitle{
   margin-top: 0px;
@@ -119,6 +121,13 @@ display: none;
 }
 .mdl-grid{
   padding : 0 !important;
+}
+#footer {
+    float: right;
+    position: fixed;
+    margin-right: 10px;
+    bottom: 30px;
+    right: 10px;
 }
  }
 
