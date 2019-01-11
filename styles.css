@@ -70,6 +70,9 @@ background: #ebebeb;
  display:none;}
  }
  @media screen and (max-width: 1000px) {
+   .mdl-layout__tab-bar-container{
+     display: none !important;
+   }
  #logoBig{
  width: 300px;
  height: auto;
@@ -100,15 +103,16 @@ display: none;
 }
 #houseInput{
   padding-left: 10px;
-  background: #e8fcf1;
+  /* background: #e8fcf1; */
   margin: 0 0 10px 0;
 }
 .cardTitle{
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   width: 100%;
   /* height: 50px; */
-  background: white;
+  background: #4caf50;
+  color: white !important;
   padding: 20px;
 }
 .cards{
@@ -238,8 +242,8 @@ display: none;
 }
 #streetInput{
   display: inline-block;
-  width: 97%;
-  max-width: 825px;
+  width: 100%;
+  /* max-width: 825px; */
 }
 #nummerInput{
   width: 28%;
@@ -259,10 +263,10 @@ display: none;
 #emailInput{
   width:49%;
 }
-#naamDiv{
+/* #naamDiv{
   width: 97%;
   max-width: 825px;
-}
+} */
 #footer{
   display: flex;
 }
@@ -288,7 +292,7 @@ display: none;
 .bloemDiv{
 
   display:inline-block;
-  max-width: 411px;
+  width: 100%;
 }
 select{
   border: none;
