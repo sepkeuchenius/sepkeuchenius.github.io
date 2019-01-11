@@ -7,6 +7,23 @@ var housesGlobal = []
 var database = firebase.database()
 document.onload = $('#loader').hide();
 $('#loginDiv').fadeIn(1200);
+$('#anew, #tab1').on('click', function(){pageLoad('newHouseCard', 'tab1')});
+$('#aedit, #tab2').on('click', function(){pageLoad('editHouseCard', 'tab2')});
+$('#alist, #tab3').on('click', function(){pageLoad('lijstCard', 'tab3')});
+$('#arec , #tab4').on('click', function(){pageLoad('recordsCard', 'tab4')});
+
+function pageLoad(page, tab){
+  var pages = ['newHouseCard', 'editHouseCard', 'lijstCard', 'recordsCard']
+  var tabs = ['tab1', 'tab2', 'tab3', 'tab4']
+  for(var i in pages){
+    $('#' + pages[i]).hide();
+  }
+  for(var i in tabs){
+    $('#' + tabs[i]).attr('class', 'mdl-layout__tab')
+  }
+  $('#' + page).show()
+  $('#' + tab).attr('class', 'mdl-layout__tab is-active');
+}
 
 $('.count').on('keyup', function(){
   var ger = Number($('#ger').val());
