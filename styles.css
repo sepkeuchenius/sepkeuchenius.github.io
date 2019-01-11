@@ -69,6 +69,11 @@ background: #ebebeb;
  #logoMiddle{
  display:none;}
  }
+  @media screen and (max-width: 600px) {
+.bloemDiv{
+  width: 100% !important
+}
+  }
  @media screen and (max-width: 1000px) {
    .mdl-layout__tab-bar-container{
      display: none !important;
@@ -88,9 +93,7 @@ background: #ebebeb;
 display: none;
 
 }
-.bloemDiv{
-  width: 100%;
-}
+
 #lijstCard{
   padding: 10px;
 }
