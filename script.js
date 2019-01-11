@@ -61,6 +61,7 @@ function login_page(data){
   $('#userBar').show()
   $('.mdl-layout__tab-bar-container').show()
   $('main').css('background', '#ebebeb')
+  $('#plantenLogo').attr('src', 'assets/plantenactie groen.png')
   loadData();
 }
 function loadData(){
