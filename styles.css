@@ -88,6 +88,9 @@ background: #ebebeb;
 display: none;
 
 }
+.bloemDiv{
+  width: 100%;
+}
 #lijstCard{
   padding: 10px;
 }
@@ -290,9 +293,8 @@ display: none;
   display: none;
 }
 .bloemDiv{
-
   display:inline-block;
-  width: 100%;
+  width: 48%;
 }
 select{
   border: none;
