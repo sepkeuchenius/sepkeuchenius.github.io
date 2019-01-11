@@ -91,6 +91,24 @@ display: none;
 #lijstCard .count{
   width: 6% !important;
 }
+#newHouseCard{
+  width: 100%;
+  margin-top: 0px !important;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+}
+#houseInput{
+  padding-left: 10px;
+}
+.cardTitle{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  /* height: 50px; */
+  background: white;
+  padding: 20px;
+}
 .cards{
   margin-left: 0;
   margin-right: 0;
@@ -193,6 +211,7 @@ display: none;
 }
 #newHouseCard input, label{
   font-size: 1em !important;
+
 }
 #editHouseCard{
   padding-bottom: 30px;
@@ -283,4 +302,7 @@ select{
 #lijstInputs{
   width: 100%;
   max-width: 100%;
+}
+.cardTitle{
+  margin-botom: 0px;
 }
