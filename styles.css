@@ -324,3 +324,7 @@ select{
 .cardTitle{
   margin-botom: 0px;
 }
+.mdl-navigation__link{
+  cursor: pointer;
+  
+}
