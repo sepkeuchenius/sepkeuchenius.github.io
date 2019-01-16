@@ -28,7 +28,7 @@ function pageLoad(page, tab){
   for(var i in tabs){
     $('#' + tabs[i]).attr('class', 'mdl-layout__tab')
   }
-  $('#' + page).show()
+  $('#' + page).fadeIn(1000)
   $('#' + tab).attr('class', 'mdl-layout__tab is-active');
 }
 
