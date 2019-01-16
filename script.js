@@ -5,12 +5,19 @@ document.querySelector('.mdl-layout__drawer').addEventListener('click', function
 var drawer = document.getElementsByClassName('mdl-layout__drawer')[0];
 var housesGlobal = []
 var database = firebase.database()
-document.onload = $('#loader').hide();
+document.onload =$('#loader').hide();
+ for(var i=0; i<20; i++){
+ $('#lijstInput').clone().appendTo('#lijstInputs');
+ }
+
 $('#loginDiv').fadeIn(1200);
 $('#anew, #tab1').on('click', function(){pageLoad('newHouseCard', 'tab1')});
 $('#aedit, #tab2').on('click', function(){pageLoad('editHouseCard', 'tab2')});
 $('#alist, #tab3').on('click', function(){pageLoad('lijstCard', 'tab3')});
 $('#arec , #tab4').on('click', function(){pageLoad('recordsCard', 'tab4')});
+
+
+
 
 function pageLoad(page, tab){
   var pages = ['newHouseCard', 'editHouseCard', 'lijstCard', 'recordsCard']

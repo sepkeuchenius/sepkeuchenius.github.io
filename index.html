@@ -101,7 +101,7 @@
 
   <section class="mdl-cell mdl-cell--9-col cards mdl-layout__tab-panel is-active page" id='newHouseCard'>
 <h5 style='' class='cardTitle'><i class='material-icons'>add</i> Nieuwe bestelling</h5>
-<div id='houseInput'>
+<form id='houseInput' onsubmit="saveHouse()" >
 <div id='streetInput'>
 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id='straatInput'>
     <input class="mdl-textfield__input" type="text" id="straat">
@@ -173,7 +173,7 @@
        </div>
      </div>
 
-</div>
+</form>
 <div id='footer'>
        <button class="mdl-button mdl-js-button" id='kosten'>
          €0
@@ -202,6 +202,7 @@ Weizig
 <i>Deze optie is vooral bedoeld voor grote schermen</i>
 <br><br>
 <div id='lijstInputs'>
+  <div id='lijstInput'>
 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label lijst" id='lijstStraatInput'>
     <input class="mdl-textfield__input" type="text" id="lijstStraat">
     <label class="mdl-textfield__label" for="lijstStraat">Straat</label>
@@ -255,6 +256,7 @@ Weizig
        <label class="mdl-textfield__label" for="gbp">+ Gratis</label>
 
      </div>
+   </div >
 </div>
 
 
